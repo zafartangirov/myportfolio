@@ -1,0 +1,11 @@
+/* TEAM */
+Developer: Zafar Tangirov
+Contact: tangirovzafar203@gmail.com
+
+/* THANKS */
+Framework: GSAP
+Tools: Intellij Idea
+
+/* SITE */
+Last update: 2024/01/22
+Standards: HTML5, CSS3, JavaScript
