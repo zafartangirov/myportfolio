@@ -86,6 +86,12 @@
 						<span class="tag-line bounce-full"><span class="text-xs tag-line">WEB
 								DEVELOPMENT</span></span>
 					</div>
+					<audio id="backgroundMusic" loop>
+  <source src="assets/music.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+
+<button onclick="toggleMusic()">Play/Pause Music</button>
 				</a>
 
 				<button class="btn btn--subtle header__trigger js-header__trigger" aria-label="Toggle menu"
@@ -382,6 +388,19 @@
 		window.addEventListener('resize', adjustTextPosition);
 		window.addEventListener('DOMContentLoaded', adjustTextPosition);
 	</script>
+
+	<script>
+  const music = document.getElementById('backgroundMusic');
+
+  function toggleMusic() {
+    if (music.paused) {
+      music.play();
+    } else {
+      music.pause();
+    }
+  }
+</script>
+
 
 </body>
 
