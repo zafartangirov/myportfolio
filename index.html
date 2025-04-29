@@ -97,18 +97,19 @@
 				<nav class="header__nav js-header__nav" id="header-nav" role="navigation" aria-label="Main">
 					<div class="header__nav-inner">
 						<ul class="header__list">
-							<li class="header__item"><a href="projects.html"
-									class="header__link external-link">LOYIHALAR</a>
-							</li>
 							<li class="header__item">
 								<audio id="backgroundMusic" loop>
   <source src="assets/FREE-ARABIC-SAMPLE-Bbno-Type-Beat-WARDA.mp3" type="audio/mpeg">
   Your browser does not support the audio element.
 </audio>
 
-<button id="musicToggleBtn" onclick="toggleMusic()">
-  <i id="musicIcon" class="fas fa-play"></i>
+
+<button id="musicToggleBtn" onclick="toggleMusic()" style="background: none; border: none; color: white; font-size: 24px;">
+  <i id="musicIcon" class="fas fa-volume-mute"></i>
 </button>
+							</li>
+							<li class="header__item"><a href="projects.html"
+									class="header__link external-link">LOYIHALAR</a>
 							</li>
 							<li class="header__item"><a href="about.html" class="header__link external-link">HAQIMDA</a>
 							</li>
@@ -399,17 +400,20 @@
   const icon = document.getElementById('musicIcon');
 
   function toggleMusic() {
-    if (music.paused) {
+    if (music.paused || music.muted) {
+      music.muted = false;
       music.play();
-      icon.classList.remove('fa-play');
-      icon.classList.add('fa-pause');
+      icon.classList.remove('fa-volume-mute');
+      icon.classList.add('fa-volume-up');
     } else {
+      music.muted = true;
       music.pause();
-      icon.classList.remove('fa-pause');
-      icon.classList.add('fa-play');
+      icon.classList.remove('fa-volume-up');
+      icon.classList.add('fa-volume-mute');
     }
   }
 </script>
+
 
 </body>
 
