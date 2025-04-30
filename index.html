@@ -76,7 +76,7 @@
   font-family: inherit;
   font-weight: 500;
   font-size: 17px;
-  padding: 12px 20px;
+  padding: 7px 7px;
   color: white;
   background: linear-gradient(144deg, #af40ff, #5b42f3 50%, #00ddeb);
   border: none;
@@ -180,33 +180,32 @@
 					<div class="header__nav-inner">
 						<ul class="header__list">
 							<li class="header__item">
-								<audio id="backgroundMusic" loop>
-  <source src="assets/BACKGROUND_MUSIC.mp3" type="audio/mpeg">
-  Your browser does not support the audio element.
-</audio>
+                            <audio id="backgroundMusic" loop>
+                                <source src="assets/BACKGROUND_MUSIC.mp3" type="audio/mpeg">
+                                Your browser does not support the audio element.
+                            </audio>
+                            
+                            <button id="musicToggleBtn" onclick="toggleMusic()"
+                                    style="background: none; border: none; color: white; font-size: 24px;">
+                                <i id="musicIcon" class="fas fa-volume-mute header__link"></i>
+                            </button>
+                        </li>
+                        <li class="header__item">
+                            <button class="Download-button header__link" onclick="downloadFile()">
+                                <svg
+                                        viewBox="0 0 640 512"
+                                        width="20"
+                                        height="16"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                            fill="white"
+                                            d="M144 480C64.5 480 0 415.5 0 336c0-62.8 40.2-116.2 96.2-135.9c-.1-2.7-.2-5.4-.2-8.1c0-88.4 71.6-160 160-160c59.3 0 111 32.2 138.7 80.2C409.9 102 428.3 96 448 96c53 0 96 43 96 96c0 12.2-2.3 23.8-6.4 34.6C596 238.4 640 290.1 640 352c0 70.7-57.3 128-128 128H144zm79-167l80 80c9.4 9.4 24.6 9.4 33.9 0l80-80c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-39 39V184c0-13.3-10.7-24-24-24s-24 10.7-24 24V318.1l-39-39c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9z"
+                                    ></path>
+                                </svg>
+                                <span>Download CV</span>
+                            </button>
 
-
-<button id="musicToggleBtn" onclick="toggleMusic()" style="background: none; border: none; color: white; font-size: 24px;">
-  <i id="musicIcon" class="fas fa-volume-mute"></i>
-</button>
-							</li>
-							<li class="header__item">
-<button class="Download-button" onclick="downloadFile()">
-  <svg
-    viewBox="0 0 640 512"
-    width="20"
-    height="16"
-    xmlns="http://www.w3.org/2000/svg"
-  >
-    <path
-      fill="white"
-      d="M144 480C64.5 480 0 415.5 0 336c0-62.8 40.2-116.2 96.2-135.9c-.1-2.7-.2-5.4-.2-8.1c0-88.4 71.6-160 160-160c59.3 0 111 32.2 138.7 80.2C409.9 102 428.3 96 448 96c53 0 96 43 96 96c0 12.2-2.3 23.8-6.4 34.6C596 238.4 640 290.1 640 352c0 70.7-57.3 128-128 128H144zm79-167l80 80c9.4 9.4 24.6 9.4 33.9 0l80-80c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-39 39V184c0-13.3-10.7-24-24-24s-24 10.7-24 24V318.1l-39-39c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9z"
-    ></path>
-  </svg>
-	<span>Download CV</span>
-</button>
-
-							</li>
+                        </li>
 							<li class="header__item"><a href="projects.html"
 									class="header__link external-link">LOYIHALAR</a>
 							</li>
