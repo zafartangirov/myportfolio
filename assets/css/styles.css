@@ -21,7 +21,7 @@
 	box-sizing: border-box;
 }
 
-.Btn {
+.btn-github {
   border: none;
   border-radius: 50%;
   width: 45px;
@@ -53,18 +53,18 @@
   transition-duration: .4s;
 }
 
-.Btn:hover {
+.btn-github:hover {
   width: 110px;
   transition-duration: .4s;
   border-radius: 30px;
 }
 
-.Btn:hover .text {
+.btn-github:hover .text {
   opacity: 1;
   transition-duration: .4s;
 }
 
-.Btn:hover .svgIcon {
+.btn-github:hover .svgIcon {
   opacity: 0;
   transition-duration: .3s;
 }
